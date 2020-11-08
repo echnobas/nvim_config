@@ -6,7 +6,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
 call plug#end()
 
-" Leader is \
+" Leader definition
+let mapleader = ";"
+
+" Leader is ;
 nnoremap <leader>c :!cargo clippy
 
 " Manually trigger intellisense
