@@ -11,6 +11,7 @@ let mapleader = ";"
 
 " Leader is ;
 nnoremap <leader>c :!cargo clippy
+nnoremap <leader>f :!cargo fmt --all
 
 " Manually trigger intellisense
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -21,7 +22,11 @@ inoremap <expr><Esc> pumvisible() ? "\<C-e>" : "\<Esc>"
 vnoremap  <leader>y  "+y
 " Remap for pasting
 vnoremap <leader>p "+p
-
+" Remap for scrolling
+map <S-Left> <C-E>
+" Remap for scrolling
+map <S-Right> <C-Y>
 set clipboard=unnamedplus
+
 syntax on
 colorscheme onedark
